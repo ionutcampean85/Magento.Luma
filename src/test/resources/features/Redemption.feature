@@ -1,4 +1,4 @@
-Feature: Test scenarios for Test web-site
+Feature: Test scenarios for Luma web-site
 
   Scenario: Successful product redemption
     Given I access the homepage
@@ -9,6 +9,7 @@ Feature: Test scenarios for Test web-site
     And choose colour 'Red'
     And choose 'XL' size
     And add product to the cart
+    And click the cart small icon
     And proceed to checkout
     And I fill in the shipping page with folowing:
       | Email Address   | icampean85@gmail.com |

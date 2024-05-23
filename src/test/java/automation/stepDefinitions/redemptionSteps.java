@@ -48,6 +48,18 @@ public class redemptionSteps {
     public void click_first_item() {
         homePage.clickFirstItem();
     }
-
+    @And("choose colour 'Red'")
+    public void select_red_colour() {
+        homePage.clickRedColour();
+    }
+    @And("choose 'XL' size")
+    public void size_XL(){
+        homePage.clicksizeXL();
+    }
+    @And("add product to the cart")
+    public void addToCart(){
+        homePage.addToCart();
+    }
 
 }
+

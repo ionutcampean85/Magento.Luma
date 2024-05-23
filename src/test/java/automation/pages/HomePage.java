@@ -47,4 +47,19 @@ public class HomePage {
         firstTshortAvailable.click();
     }
 
+    public void clickRedColour() {
+        WebElement redColour = driver.findElement(By.id("option-label-color-93-item-58"));
+        redColour.click();
+
+    }
+
+    public void clicksizeXL() {
+        WebElement sizeXL = driver.findElement(By.id("option-label-size-143-item-170"));
+        sizeXL.click();
+    }
+
+    public void addToCart() {
+        WebElement addToCart = driver.findElement(By.id("product-addtocart-button"));
+        addToCart.click();
+    }
 }

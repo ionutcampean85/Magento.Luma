@@ -6,3 +6,6 @@ Feature: Test scenarios for Luma web-site
     Then I should be on the Men articles page
     And click on 'Shop Tees' tile
     And click on first item from the list
+    And choose colour 'Red'
+    And choose 'XL' size
+    And add product to the cart
