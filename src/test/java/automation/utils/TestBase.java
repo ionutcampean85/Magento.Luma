@@ -11,7 +11,6 @@ public class TestBase {
 
         if (driver == null) {
             driver = new ChromeDriver();
-
         }
         return driver;
 

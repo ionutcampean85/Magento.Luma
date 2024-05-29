@@ -47,10 +47,9 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.19.1</version>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>4.16.0</version>
         </dependency>
-
 
 
     </dependencies>

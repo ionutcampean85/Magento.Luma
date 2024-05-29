@@ -1,14 +1,13 @@
 package automation.hooks;
 
 import automation.utils.TestBase;
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class MyHooks {
-
+public class TestExecutionHooks {
     private TestBase testBase;
 
-    public MyHooks(TestBase testBase) {
+
+    public TestExecutionHooks(TestBase testBase) {
         this.testBase = testBase;
 
     }
