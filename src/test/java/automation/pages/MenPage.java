@@ -45,4 +45,17 @@ public class MenPage {
         return menTees;
 
     }
+
+    public void clickTee() {
+        WebElement tshirtItem = driver.findElement(By.cssSelector("img[alt='Strike Endurance Tee']"));
+        tshirtItem.click();
+    }
+
+
+    public boolean StrikeEnduranceTeeDisplayed() {
+        boolean StrikeEnduranceTee;
+        if (driver.getCurrentUrl().contains("strike-endurance-tee.html")) StrikeEnduranceTee = true;
+        else StrikeEnduranceTee = false;
+        return StrikeEnduranceTee;
+    }
 }

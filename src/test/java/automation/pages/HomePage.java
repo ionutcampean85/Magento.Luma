@@ -50,11 +50,6 @@ public class HomePage {
     }
 
 
-    public void clickTshirtItem() {
-        WebElement tshirtItem = driver.findElement(By.cssSelector("a[class='block-promo mens-category-tees']"));
-        tshirtItem.click();
-    }
-
     public void clickRedColour() {
         WebElement redColour = driver.findElement(By.id("option-label-color-93-item-58"));
         redColour.click();
@@ -70,4 +65,5 @@ public class HomePage {
         WebElement addToCart = driver.findElement(By.id("product-addtocart-button"));
         addToCart.click();
     }
+
 }

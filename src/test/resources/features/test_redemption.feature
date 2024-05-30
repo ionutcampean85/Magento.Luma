@@ -9,9 +9,9 @@ Feature: Test scenarios for Luma web-site
     And I click on 'Shop Tees' tile
     Then 'Men Tees' page is displayed
 
-#    Given I am on "Men Tees" page
-#    When I click on first item from the list
-#    Then product with item 'Strike Endurance Tee' is displayed
+    Given I am on "Men Tees" page
+    When I click on first item from the list
+    Then product with item 'Strike Endurance Tee' is displayed
 #
 #    Given I am on 'Strike Endurance Tee' page
 #    When I choose colour 'Red'

@@ -32,11 +32,6 @@ public class HomePageSteps {
     }
 
 
-    @And("click item")
-    public void click_item() {
-        homePage.clickTshirtItem();
-    }
-
     @And("choose colour 'Red'")
     public void select_red_colour() {
         homePage.clickRedColour();
@@ -62,6 +57,7 @@ public class HomePageSteps {
         homePage.openPage(location);
         homePage.assertPageLocation(location);
     }
+
 
 }
 

@@ -2,6 +2,7 @@ package automation.stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import org.testng.Assert;
 import automation.pages.MenPage;
 import automation.utils.TestBase;
@@ -16,14 +17,9 @@ public class MenPageSteps {
     }
 
     @Then("I should be on the Men page")
-    public void isMenPageIsDisplayed() {
+    public void is_Men_Page_Is_Displayed() {
         Assert.assertTrue(menPage.isMenPageDisplayed());
     }
-
-//    @Given("I am on 'Men' page")
-//    public void I_am_on_the_page() {
-//        Assert.assertTrue(menPage.isMenPageDisplayed());
-//    }
 
     @And("I click on 'Shop Tees' tile")
     public void click_Shop_Tees_tile() {
@@ -35,7 +31,18 @@ public class MenPageSteps {
         Assert.assertTrue(menPage.menTeesPageDisplayed());
     }
 
+    @When("I click on first item from the list")
+    public void click_First_Item() {
+        menPage.clickTee();
 
+
+    }
+
+    @Then("product with item 'Strike Endurance Tee' is displayed")
+    public void tee_Strike_Endurance_displayed() {
+        Assert.assertTrue(menPage.StrikeEnduranceTeeDisplayed());
+
+    }
 
 
 }
