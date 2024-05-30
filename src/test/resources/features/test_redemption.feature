@@ -1,15 +1,15 @@
 Feature: Test scenarios for Luma web-site
 
   Scenario: Successful product redemption
-    Given I am on "<Home>" page
+    Given I navigate to "Home" page
     When I click on 'Men' top header menu option
     Then I should be on the Men page
 
-    Given I am on "<Men>" page
+    Given I am on "Men" page
     And I click on 'Shop Tees' tile
-    Then 'Men Tees' are displayed
+    Then 'Men Tees' page is displayed
 
-#    Given I am on "<Men Tees>" page
+#    Given I am on "Men Tees" page
 #    When I click on first item from the list
 #    Then product with item 'Strike Endurance Tee' is displayed
 #

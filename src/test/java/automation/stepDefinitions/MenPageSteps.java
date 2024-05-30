@@ -30,9 +30,9 @@ public class MenPageSteps {
         menPage.clickShopTeesTile();
     }
 
-    @Then("'Men Tees' are displayed")
+    @Then("'Men Tees' page is displayed")
     public void are_Men_Tees_displayed() {
-        Assert.assertTrue(menPage.areMenTeesPageDisplayed());
+        Assert.assertTrue(menPage.menTeesPageDisplayed());
     }
 
 

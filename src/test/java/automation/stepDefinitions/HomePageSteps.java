@@ -53,20 +53,15 @@ public class HomePageSteps {
     }
 
     @Given("^I am on \"(.*)\" page$")
-
-    public void assertPageLocation(String location) {
-        // Code to enter for logic of location
-        if (location.equals("Men Tees"))
-            Assert.assertTrue(driver.getCurrentUrl().contains("tees-men.html"));
-        if (location.equals("Home"))
-            Assert.assertTrue(driver.getCurrentUrl().contains("/"));
-        if (location.equals("Men")) {
-            Assert.assertTrue(driver.getCurrentUrl().contains("men.html"));
-        } else {
-            throw new IllegalArgumentException("Invalid location" + location);
-        }
-
-
+    public void assertPageLocation(String location) throws Exception {
+        homePage.assertPageLocation(location);
     }
+
+    @Given("^I navigate to \"(.*)\" page$")
+    public void openAndAssertPageLocation(String location) throws Exception {
+        homePage.openPage(location);
+        homePage.assertPageLocation(location);
+    }
+
 }
 

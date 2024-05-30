@@ -40,11 +40,9 @@ public class MenPage {
     }
 
 
-    public boolean areMenTeesPageDisplayed() {
-        Assert.assertTrue(driver.getCurrentUrl().equals("https://magento.softwaretestingboard.com/men/tops-men/tees-men.html"));
-        return areMenTeesPageDisplayed();
+    public boolean menTeesPageDisplayed() {
+        boolean menTees = driver.getCurrentUrl().equals("https://magento.softwaretestingboard.com/men/tops-men/tees-men.html");
+        return menTees;
 
     }
-
-
 }
