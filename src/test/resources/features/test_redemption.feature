@@ -1,23 +1,25 @@
 Feature: Test scenarios for Luma web-site
 
-  Scenario: Successful product redemption
-    Given I navigate to "Home" page
+  Scenario Outline: Successful product redemption
+    Given I navigate to "<location>" page
     When I click on 'Men' top header menu option
     Then I should be on the Men page
-
-    Given I am on "Men" page
+    Given I am on "<location1>" page
     And I click on 'Shop Tees' tile
     Then 'Men Tees' page is displayed
-
-    Given I am on "Men Tees" page
+    Given I am on "<location2>" page
     When I click on first item from the list
     Then product with item 'Strike Endurance Tee' is displayed
-#
-#    Given I am on 'Strike Endurance Tee' page
-#    When I choose colour 'Red'
-#    And choose 'XL' size
-#    And add product to the cart
-#    And click the cart small icon
+    Given I am on "<location3>" page
+    When I choose 'Red'
+    And choose 'XL' size
+    And add product to the cart
+    And click mini cart icon
+    Then the product should be in the cart
+    Examples:
+      | location | location1 | location2 | location3 |
+      | Home     | Men       | Men Tees  | Product   |
+
 #    And click proceed to checkout
 #    Then I should be on the 'Shipping address' page
 #

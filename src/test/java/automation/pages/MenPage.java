@@ -54,8 +54,7 @@ public class MenPage {
 
     public boolean StrikeEnduranceTeeDisplayed() {
         boolean StrikeEnduranceTee;
-        if (driver.getCurrentUrl().contains("strike-endurance-tee.html")) StrikeEnduranceTee = true;
-        else StrikeEnduranceTee = false;
+        StrikeEnduranceTee = driver.getCurrentUrl().contains("strike-endurance-tee.html");
         return StrikeEnduranceTee;
     }
 }

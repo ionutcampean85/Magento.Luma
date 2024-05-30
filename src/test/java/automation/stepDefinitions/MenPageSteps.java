@@ -35,7 +35,6 @@ public class MenPageSteps {
     public void click_First_Item() {
         menPage.clickTee();
 
-
     }
 
     @Then("product with item 'Strike Endurance Tee' is displayed")
